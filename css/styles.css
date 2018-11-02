@@ -1,5 +1,9 @@
 .container {
-	width: 87%;
+	width: 92%;
+}
+
+body {
+	background-color: #f2f2f2;
 }
 
 /*****************************
@@ -8,6 +12,7 @@
 nav {
 	padding-left: 15px;
 	padding-right: 15px;
+	background-color: #fff;
 }
 
 .logo {
@@ -91,8 +96,8 @@ a.menu {
 /***********************************
 			SECTION HEADERS
 ***********************************/
-.explore-today,
-.travel {
+.explore-section,
+.travel-section {
 	color: #fff;
 }
 
@@ -128,10 +133,10 @@ a.menu {
 ********************/
 .latest-stories {
 	position: relative;
-	padding-left: 15px;
+	padding-left: 25px;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 22px;
 	letter-spacing: 3px;
 	margin-bottom: 20px;
 }
@@ -151,9 +156,18 @@ a.menu {
 	order: 1;
 }
 
+.latest .card-sm [class^="track-"] {
+	margin-bottom: 0;
+}
+
 /********************
 	SEE MORE
 ********************/
+.see-more {
+	display: block;
+	text-align: center;
+}
+
 .see-more a {
 	position: relative;
 	display: inline-block;
@@ -190,9 +204,8 @@ a.menu {
 /******************************
 		EXPLORE TODAY
 *******************************/
-.explore-today {
+.explore-section {
 	position: relative;
-	height: 1200px;
 	background-image: url(../images/explore-today.jpg);
 	background-position: center;
 	background-attachment: fixed;
@@ -205,8 +218,200 @@ a.menu {
 	z-index: 2;
 }
 
-.explore-today .nat-geo__header {
+.explore-section .nat-geo__header {
 	padding-bottom: 88px;
+}
+
+/******************************
+		WATCH SECTION
+******************************/
+.video-container {
+	position: relative;
+	margin: 0 auto;
+}
+
+.video-box {
+	position: relative;
+	height: 141vw;
+	overflow: hidden;
+}
+
+.video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.video-container .overlay-bottom {
+	padding: 30px;
+}
+
+.video-container .overlay-bottom__category {
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+.video-container .card-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 33px;
+	letter-spacing: 3px;
+	margin-bottom: 25px;
+}
+
+.video-container [class^="overlay"] .card-text {
+	font-weight: normal;
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 23px;
+	margin-bottom: 35px;
+}
+
+/*****************************
+		TRAVEL SECTION
+*****************************/
+.travel-section .nat-geo__header {
+	margin-bottom: 300px;
+}
+
+.travel-section {
+	position: relative;
+	background-image: url(../images/travel.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.travel-section .card-md-1 .card-text-section__text {
+	margin-bottom: 135px;
+}
+
+.travel-section .card-md-1 .card-text-section__text {
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.travel-section .card-md-2 .card-text-section__text {
+	font-size: 25px;
+	line-height: 34px;
+}
+
+/*****************************
+		BELONG SECTION
+*****************************/
+.potd-container {
+	height: 140vw;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+.potd__overlay--header {
+	position: absolute;
+	top: 35px;
+	width: 100%;
+	text-align: center;
+}
+
+.potd__overlay--header .see-more {
+	text-align: center;
+}
+
+.potd__overlay--header .see-more a {
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.potd__date {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 3px;
+}
+
+.potd__overlay--footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+
+	text-transform: uppercase;
+}
+
+.potd__overlay--footer h5 {
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 12px;
+}
+
+.potd__overlay--footer p {
+	font-size: 13px;
+	letter-spacing: 2px;
+	line-height: 17px;
+}
+
+.belong-section .card-sm .card-title {
+	display: inline-block;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-bottom: 2px solid transparent;
+}
+
+.belong-section .card-sm .card-title:hover {
+	border-bottom: 2px solid #fc0;
+	text-decoration: none;
+}
+
+.belong-section .card-sm .card-text {
+	color: gray;
+	font-weight: unset;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+
+.belong-section .card-sm .card-text:hover {
+	color: gray;
+}
+
+.belong-section .card-md .card-text-section__text {
+	text-transform: unset;
+}
+
+.belong-section .card-md-1 {
+	background-color: #fc0;
+}
+
+.belong-section .card-md-1 .card-text-section__text,
+.fa-camera-retro {
+	color: #000;
+}
+
+.belong-section .card-md-1 .card-text-section__text {
+	font-size: 22px;
+	line-height: 30px;
+	margin-bottom: 60px;
+	letter-spacing: 1px;
+}
+
+.belong-section .card-md-2 .card-text-section__category {
+	color: #fff;
+	font-size: 17px;
+}
+
+.belong-section .card-md-2 .card-text-section__text {
+	font-size: 25px;
+	line-height: 34px;
+	margin-bottom: 100px;
+}
+
+.fa-camera-retro {
+	font-size: 80px;
+	margin-bottom: 20px;
 }
 
 /*****************************
@@ -216,7 +421,7 @@ a.menu {
 	position: relative;
 }
 
-.card-overlay-img {
+.overlay-img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -228,8 +433,8 @@ a.menu {
 	transition: .2s;
 }
 
-.card-overlay-middle,
-.card-overlay-bottom {
+.overlay-middle,
+.overlay-bottom {
 	position: absolute;
 }
 
@@ -239,7 +444,7 @@ a.menu {
 	font-size: 12px;
 }
 
-.card-overlay-bottom__category {
+.overlay-bottom__category {
 	letter-spacing: 2px;
 	margin-bottom: 10px;
 }
@@ -248,7 +453,7 @@ a.menu {
 	font-weight: normal;
 }
 
-[class^="card-overlay"] .card-text {
+[class^="overlay"] .card-text {
 	width: 85%;
 	font-size: 32px;
 	line-height: 40px;
@@ -256,15 +461,15 @@ a.menu {
 	margin-bottom: 15px;
 }
 
-.card-overlay-middle {
+.overlay-middle {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-.card-overlay-bottom {
-	left: 3%;
-	top: 45%;
+.overlay-bottom {
+	bottom: 0;
+	padding: 25px;
 }
 
 .card-text__sub {
@@ -293,16 +498,61 @@ a.menu {
 	margin-bottom: 15px;
 }
 
-.card-button {
-	position: absolute;
-	bottom: 5%;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: yellow;
-	padding: 25px;
+.card-button-container {
+	display: inline-block;
+	background-color: #fc0;
+	font-size: 12px;
+	font-weight: bold;
 	color: black;
+	transition: .3s;
+}
+
+.card-button-learn-more {
+	background-color: #fff;
+	color: black;
+}
+
+.card-button-learn-more:hover {
+	color: #fff;
+}
+
+.card-button-learn-more .card-button::before {
+	background-color: #000;
+}
+
+.card-button {
+	position: relative;
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	padding: 15px 20px;
 	text-transform: uppercase;
-	font-size: 13px;
+	letter-spacing: 3px;
+	z-index: 1;
+}
+
+.card-button:focus {
+	outline: none;
+}
+
+.card-button:hover {
+	cursor: pointer;
+}
+
+.card-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #fff;
+	z-index: -1;
+	transition: .3s;
+}
+
+.card-button-container:hover .card-button::before {
+	width: 100%;
 }
 
 .card-sm {
@@ -344,7 +594,7 @@ a.menu {
 }
 
 .card-sm .card-text,
-[class^="card-overlay"] {
+[class^="overlay"] {
 	color: #fff;
 }
 
@@ -366,14 +616,35 @@ a.menu {
 	height: 5px;
 }
 
+.card-md,
+.card-lg {
+	overflow: hidden;
+}
+
+.card-md {
+	height: 115vw;
+	position: relative;
+	text-align: center;
+}
+
 .card-lg {
 	height: 360px;
-	overflow: hidden;
 	margin-bottom: 50px;
 }
 
+.card-md .card-text-section__text,
+.card-md .card-text-section__text {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.card-md-1 .overlay-middle {
+	top: 40%;
+}
+
 .card-img-section:hover .card-img,
-.card-lg:hover .card-overlay-img {
+.card-lg:hover .overlay-img,
+.card-md:hover .overlay-img {
 	transform: scale(1.2);
 }
 
@@ -383,7 +654,7 @@ a.menu {
 }
 
 /***********************************
-			HELPER CLASSES
+			EXTRA CLASSES
 ***********************************/
 [class^="gradient"] {
 	position: absolute;
@@ -401,14 +672,112 @@ a.menu {
 /*****************************************
 				MEDIA QUERIES
 ******************************************/
+@media only screen and (min-width: 480px) {
+	.container {
+		width: 75%;
+	}
+
+	.video-container {
+		width: 80%;
+	}
+
+	.video-box {
+		height: 115vw;
+	}
+
+	.potd-container {
+		height: 65vw;
+	}
+}
+
 @media only screen and (min-width: 768px) {
+	.container {
+		width: 730px;
+	}
+
 	.temp-link {
 		display: unset;
+	}
+
+	.photo-contest-img {
+		height: 257px;
+	}
+
+	.video-container {
+		width: 100%;
+		max-width: 1020px;
+	}
+
+	.video-box {
+		width: 100%;
+		height: 55vw;
+		max-height: 575px;
+	}
+
+	.card-md {
+		height: 480px;
+	}
+
+	.potd-container {
+		width: 730px;
+		height: 485px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.potd-container .see-more {
+		text-align: center;
+	}
+
+	.travel-links .see-more {
+		text-align: left;
 	}
 }
 
 @media only screen and (min-width: 1120px) {
+	.container {
+		width: 1020px;
+	}
+
+	.see-more {
+		text-align: left;
+	}
+
+	.photo-contest-img {
+		height: 238px;
+	}
+
 	.latest {
 		order: 0;
+	}
+
+	.video-container {
+		width: 940px;
+	}
+
+	.video-box {
+		position: relative;
+		width: 100%;
+		height: 530px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.card-md {
+		height: 400px;
+	}
+
+	.potd-container {
+		width: 1020px;
+		height: 750px;
+	}
+
+	.potd__overlay--footer h5,
+	.potd__overlay--footer p {
+		display: inline-block;
+	}
+
+	.potd__overlay--footer h5 {
+		margin-right: 10px;
 	}
 }
