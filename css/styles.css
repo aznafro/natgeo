@@ -900,6 +900,10 @@ a.menu {
 	.shop-section .card-img-box {
 		height: 200px;
 	}
+
+	.input-box input {
+		width: 60%;
+	}
 }
 
 @media only screen and (min-width: 768px) {
