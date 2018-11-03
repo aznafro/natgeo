@@ -490,11 +490,46 @@ a.menu {
 /*****************************
 	NEXT MONTH ISSUE SECTION
 *****************************/
-
+.next-month-issue {
+	background: linear-gradient(to top, black 0%, black 33%, transparent 60%, transparent 100%), url(../images/desert.jpg);
+	height: 100vh;
+}
 
 /*****************************
 		SHOP SECTION
 *****************************/
+.shop-section {
+	background-color: #fff;
+}
+
+.shop-section .card {
+	height: 460px;
+}
+
+.shop-section .card-img-box {
+	height: 300px;
+}
+
+.shop-section .card-text-section__text,
+.shop-section .overlay-bottom {
+	text-align: center;
+}
+
+.shop-section .overlay-bottom {
+	padding: 18px;
+}
+
+.shop-section .card-text-section__text {
+	padding: 20px;
+}
+
+.shop-section .card-button:hover {
+	color: #fff;
+}
+
+.shop-section .card-button::before {
+	background-color: #000;
+}
 
 /*****************************
 			CARDS
@@ -681,6 +716,10 @@ a.menu {
 	color: #fff;
 }
 
+.card-img-box {
+	height: 230px;
+}
+
 .card-img-section {
 	position: relative;
 	overflow: hidden;
@@ -779,6 +818,14 @@ a.menu {
 	.wwd-section .card-md {
 		height: 95vw;
 	}
+
+	.shop-section .card {
+		height: 375px;
+	}
+
+	.shop-section .card-img-box {
+		height: 200px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -841,6 +888,18 @@ a.menu {
 		width: 50%;
 		font-size: 55px;
 		line-height: 88px;
+	}
+
+	.shop-section .card {
+		height: 420px;
+	}
+
+	.shop-section .card-img-box {
+		height: 250px;
+	}
+
+	.shop-section .card-text-section__text {
+		font-size: 24px;
 	}
 }
 
@@ -931,5 +990,18 @@ a.menu {
 		width: 330px;
 		height: 450px;
 		border-width: 50px;
+	}
+
+	.shop-section .card {
+		height: 500px;
+	}
+
+	.shop-section .card-img-box {
+		height: 310px;
+	}
+
+	.shop-section .card-text-section__text {
+		margin-top: 10px;
+		padding: 18px;
 	}
 }
