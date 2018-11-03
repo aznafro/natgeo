@@ -323,13 +323,13 @@ a.menu {
 .potd__overlay--header .see-more a {
 	font-size: 18px;
 	letter-spacing: 2px;
-	margin-bottom: 10px;
+	padding-bottom: 4px;
 }
 
 .potd__date {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 13px;
 	letter-spacing: 3px;
 }
 
@@ -354,11 +354,17 @@ a.menu {
 	line-height: 17px;
 }
 
+.belong-section .card-sm .card-img {
+	height: 30vw;
+	max-height: unset;
+}
+
 .belong-section .card-sm .card-title {
-	display: inline-block;
+	display: inline;
 	font-weight: bold;
-	letter-spacing: 1px;
+	
 	border-bottom: 2px solid transparent;
+	text-transform: unset;
 }
 
 .belong-section .card-sm .card-title:hover {
@@ -368,10 +374,8 @@ a.menu {
 
 .belong-section .card-sm .card-text {
 	color: gray;
-	font-weight: unset;
-	font-size: 13px;
-	line-height: 18px;
-	letter-spacing: 1px;
+	font-weight: unset;	
+	margin-top: 8px;
 }
 
 .belong-section .card-sm .card-text:hover {
@@ -409,10 +413,41 @@ a.menu {
 	margin-bottom: 100px;
 }
 
+.belong-section .story {
+	margin-bottom: 0;
+}
+
 .fa-camera-retro {
 	font-size: 80px;
 	margin-bottom: 20px;
 }
+
+.belong-section .latest-stories {
+	font-size: 17px;
+	line-height: 23px;
+}
+
+.belong-section .latest-stories::before {
+	height: 90%;
+}
+
+/****************************
+		WHAT WE DO
+****************************/
+.wwd-section {
+	background-color: #fff;
+}
+
+.wwd-section .card-text-section__category {
+	font-size: 16px;
+	color: white;
+}
+
+.wwd-section .card-md .card-text-section__text {
+	text-transform: unset;
+	font-size: 22px;
+	line-height: 28px;
+} 
 
 /*****************************
 			CARDS
@@ -436,6 +471,8 @@ a.menu {
 .overlay-middle,
 .overlay-bottom {
 	position: absolute;
+	width: 100%;
+	padding: 25px;
 }
 
 [class*="category"] {
@@ -469,7 +506,6 @@ a.menu {
 
 .overlay-bottom {
 	bottom: 0;
-	padding: 25px;
 }
 
 .card-text__sub {
@@ -688,6 +724,14 @@ a.menu {
 	.potd-container {
 		height: 65vw;
 	}
+
+	.belong-section .card-sm .card-img {
+		height: 35vw;
+	}
+
+	.wwd-section .card-md {
+		height: 95vw;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -725,12 +769,25 @@ a.menu {
 		margin-right: auto;
 	}
 
-	.potd-container .see-more {
-		text-align: center;
+	.latest-photos .see-more {
+		text-align: left;
 	}
 
-	.travel-links .see-more {
-		text-align: left;
+	.potd__overlay--header .see-more a {
+		font-size: 22px;
+		letter-spacing: 3px;
+	}
+
+	.belong-section .card-sm .card-img {
+		height: 140px;
+	}
+
+	.wwd-section .card-md-1 {
+		height: 410px;
+	}
+
+	.wwd-section .card-md-2 {
+		height: 470px;
 	}
 }
 
@@ -772,6 +829,19 @@ a.menu {
 		height: 750px;
 	}
 
+	.potd__overlay--header .see-more:hover a {
+		color: white;
+	}
+
+	.potd__overlay--header .see-more:hover a::before {
+		top: unset;
+		height: unset;
+	}
+
+	.potd__overlay--header .see-more a {
+		border-bottom: none;	
+	}
+
 	.potd__overlay--footer h5,
 	.potd__overlay--footer p {
 		display: inline-block;
@@ -779,5 +849,24 @@ a.menu {
 
 	.potd__overlay--footer h5 {
 		margin-right: 10px;
+	}
+
+	.belong-section .card-sm {
+		width: 320px;
+	}
+
+	.belong-section .card-sm .card-title {
+		letter-spacing: 1px;
+		line-height: 20px;
+	}
+
+	.belong-section .card-sm .card-text {
+		font-size: 13px;
+		line-height: 18px;
+		letter-spacing: 1px;
+	}
+
+	.wwd-section .card-md {
+		height: 430px;
 	}
 }
