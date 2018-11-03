@@ -532,6 +532,80 @@ a.menu {
 }
 
 /*****************************
+		  SUBSCRIBE
+*****************************/
+.subscribe {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/river.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: #fff;
+
+	padding: 60px 22px 60px 22px;
+}
+
+.subscribe__header,
+.subscribe__text,
+.input-box input {
+	margin-bottom: 20px;
+}
+
+.subscribe__header {
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 40px;
+	letter-spacing: 1px;
+}
+
+.subscribe__text {
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.input-box label {
+	display: none;
+}
+
+.input-box input,
+.r-arrow {
+	height: 55px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.input-box input {
+	font-size: 16px;
+	color: lightgray;
+	border: none;
+	width: 75%;
+}
+
+.r-arrow {
+	position: relative;
+	background-color: #fc0;
+	color: #000;
+	border: 1px solid transparent;
+}
+
+.policy,
+.policy__link {
+	font-size: 14px;
+	line-height: 18px;
+	color: lightgray;
+}
+
+.policy__link {
+	display: inline-block;
+	border-bottom: 1px solid lightgray;
+}
+
+.policy__link:hover {
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+/*****************************
 			CARDS
 *****************************/
 .card {
@@ -901,6 +975,10 @@ a.menu {
 	.shop-section .card-text-section__text {
 		font-size: 24px;
 	}
+
+	.input-box input {
+		width: 47%;
+	 }
 }
 
 @media only screen and (min-width: 1120px) {
@@ -1003,5 +1081,10 @@ a.menu {
 	.shop-section .card-text-section__text {
 		margin-top: 10px;
 		padding: 18px;
+	}
+
+	.policy {
+		width: 46%;
+		margin: 0 auto;
 	}
 }
