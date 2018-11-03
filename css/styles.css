@@ -450,6 +450,53 @@ a.menu {
 } 
 
 /*****************************
+	   FROM THE MAGAZINE
+*****************************/
+.from-the-mag {
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	z-index: -1;
+}
+
+.from-the-mag__text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 100%;
+	text-align: center;
+	font-size: 44px;
+	letter-spacing: 2px;
+	line-height: 45px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: black;
+}
+
+.from-the-mag__text::before {
+	content: "";
+	width: 210px;
+	height: 320px;
+	border: 35px solid #fc0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+/*****************************
+	NEXT MONTH ISSUE SECTION
+*****************************/
+
+
+/*****************************
+		SHOP SECTION
+*****************************/
+
+/*****************************
 			CARDS
 *****************************/
 .card {
@@ -789,6 +836,12 @@ a.menu {
 	.wwd-section .card-md-2 {
 		height: 470px;
 	}
+
+	.from-the-mag__text {
+		width: 50%;
+		font-size: 55px;
+		line-height: 88px;
+	}
 }
 
 @media only screen and (min-width: 1120px) {
@@ -868,5 +921,15 @@ a.menu {
 
 	.wwd-section .card-md {
 		height: 430px;
+	}
+
+	.from-the-mag__text {
+		width: 100%;
+	}
+
+	.from-the-mag__text::before {
+		width: 330px;
+		height: 450px;
+		border-width: 50px;
 	}
 }
