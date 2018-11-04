@@ -606,6 +606,137 @@ a.menu {
 }
 
 /*****************************
+		FOOTER SECTION
+*****************************/
+footer {
+	background-color: #000;
+	color: #fff;
+}
+
+.footer-container-top {
+	padding: 30px 20px 15px 20px;
+}
+
+.footer-container-bot {
+	padding: 20px;
+}
+
+.footer-logo,
+.footer-logo-2 {
+	position: relative;
+	left: 35px;
+	font-size: 20px;
+	width: 50%;
+}
+
+.footer-logo {
+	padding-bottom: 25px;
+}
+
+.footer-logo-2 {
+	display: none;
+}
+
+.footer-logo::before,
+.footer-logo-2::before {
+	content: "";
+	width: 28px;
+	height: 40px;
+	border: 4px solid #fc0;
+
+	position: absolute;
+	top: 0;
+	left: -35px;
+}
+
+.footer-link__header {
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.footer-container-top .nav-item {
+	padding: 0;
+}
+
+.social-links {
+	width: 80px;
+	margin-left: -10px;
+}
+
+.social-links i {
+	font-size: 22px;
+}
+
+.social-links i:hover {
+	color: #fc0;
+}
+
+.social-links [class^="track"] {
+	margin: 0;
+	padding: 6px;
+}
+
+.media-box {
+	text-align: center;
+}
+
+.join-section .country {
+	margin-top: 30px;
+}
+
+.country:hover {
+	cursor: pointer;
+}
+
+.country__flag {
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background-image: url(https://icons.nationalgeographic.com/icons/flags/united-states/);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.country__name {
+	vertical-align: top;
+	font-size: 13px;
+}
+
+.country__drop-down {
+	transform: translateY(-2px);
+}
+
+.footer-container-top .nav-link {
+	padding-top: 10px;
+	padding-bottom: 1px;
+	width: unset;
+	border-bottom: 1px solid transparent;
+}
+
+.footer-container-top section:not(.follow-section) .nav-link:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.copy [class^="track"] {
+	margin-bottom: 0;
+}
+
+.copy__text {
+	font-size: 12px;
+	color: gray;
+	line-height: 17px;
+	margin-bottom: 7px;
+}
+
+.copy__text--first {
+	display: block;
+	margin-bottom: 7px;
+}
+
+/*****************************
 			CARDS
 *****************************/
 .card {
@@ -865,6 +996,10 @@ a.menu {
 	background-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5) 70%, rgb(0, 0, 0) 100%);
 }
 
+.hidden {
+	display: none;
+}
+
 /*****************************************
 				MEDIA QUERIES
 ******************************************/
@@ -903,6 +1038,26 @@ a.menu {
 
 	.input-box input {
 		width: 60%;
+	}
+
+	.copy__text--first {
+		position: relative;
+		display: unset;
+		padding-right: 15px;
+	}
+
+	.copy__text--first::after {
+		content: "";
+		position: absolute;
+		top: 4px;
+		right: 0;
+		width: 1px;
+		height: 12px;
+		background-color: lightgray;
+	}
+
+	.copy__text--second {
+		padding-left: 10px;
 	}
 }
 
@@ -982,6 +1137,48 @@ a.menu {
 
 	.input-box input {
 		width: 47%;
+	 }
+
+	 .footer-logo {
+	 	display: none;
+	 }
+
+	 .footer-logo-2 {
+	 	display: unset;
+	 }
+
+	 .follow-section {
+	 	position: relative;
+	 	left: -70px;
+	 }
+
+	 .social-links {
+	 	width: 150px;
+	 }
+
+	 .join-section .country {
+	 	display: none;
+	 }
+
+	 .follow-section .country {
+	 	display: block;
+	 	margin-bottom: 30px;
+	 }
+
+	 .copy {
+	 	border-top: 1px solid lightgray;
+	 }
+
+	 .copy__text--first {
+	 	display: block;
+	 }
+
+	 .copy__text--first::after {
+	 	height: 0;
+	 }
+
+	 .copy__text--second {
+	 	padding-left: 0;
 	 }
 }
 
@@ -1090,5 +1287,30 @@ a.menu {
 	.policy {
 		width: 46%;
 		margin: 0 auto;
+	}
+
+	[class^="footer-container"] {
+		width: 1000px;
+		margin: 0 auto;
+
+		position: relative;
+		left: -40px;
+	}
+
+	.copy__text {
+		margin-top: 12px;
+	}
+
+	.copy__text--first {
+		display: inline;
+		padding-right: 15px;
+	}
+
+	.copy__text--first::after {
+		height: 12px;
+	}
+
+	.copy__text--second {
+		padding-left: 10px;
 	}
 }
