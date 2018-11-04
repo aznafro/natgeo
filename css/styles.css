@@ -491,8 +491,90 @@ a.menu {
 	NEXT MONTH ISSUE SECTION
 *****************************/
 .next-month-issue {
-	background: linear-gradient(to top, black 0%, black 33%, transparent 60%, transparent 100%), url(../images/desert.jpg);
-	height: 100vh;
+	position: relative;
+	background-color: #000;
+}
+
+.next-month-img-box {
+	position: relative;
+	height: 90vw;
+}
+
+.next-month-img-box .overlay-img {
+	background-image: linear-gradient(to top, black 0%, transparent 50%, transparent 100%),
+	                  url(../images/desert.jpg);
+}
+
+.issue__date {
+	margin-top: -7px;
+	margin-bottom: 25px;
+}
+
+.issue__date span {
+	color: #fc0;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-left: 3px solid #fc0;
+	border-right: 3px solid #fc0;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.issue__title {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.issue__description {
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.next-month-issue .see-more {
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+.next-month-issue__text {
+	background-color: #000;
+	color: #fff;
+	padding: 40px 20px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.also-in-issue__header {
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 25px;
+}
+
+.next-month-issue .card-sm {
+	display: block;
+	margin-bottom: 25px;
+}
+
+.next-month-issue .card-sm::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.next-month-issue .also-in-issue .card-img {
+	float: left;
+	width: 90px;
+	height: 95px;
+	max-height: unset;
+	margin-right: 20px;
+}
+
+.next-month-issue .card-sm .card-text {
+	font-size: 15px;
 }
 
 /*****************************
@@ -1123,6 +1205,22 @@ footer {
 		line-height: 88px;
 	}
 
+	.next-month-img-box {
+		height: 65vw;
+	}
+
+	.also-in-issue__header {
+		font-size: 16px;
+	}
+
+	.next-month-issue__text--info .card-button-container {
+		display: inline-block;
+	}
+
+	.also-in-issue .card-button-container {
+		display: none;
+	}	
+
 	.shop-section .card {
 		height: 420px;
 	}
@@ -1270,6 +1368,54 @@ footer {
 		height: 450px;
 		border-width: 50px;
 	}
+
+	.next-month-issue {
+		height: 820px;
+	}
+
+	.next-month-issue__text {
+		width: 600px;
+		order: -1;
+	}
+
+	.next-month-img-box {
+		width: 100%;
+		height: 100%;
+	}
+
+	.next-month-img-box .overlay-img {
+		background-image: linear-gradient(to right, black 30%, transparent 50%, transparent 100%),
+		                  url(../images/desert.jpg);
+	}
+
+	.next-month-issue__text {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 1250px;
+		max-width: 95%;
+		height: 100%;
+		text-align: left;
+		background-color: transparent;
+		background-image: linear-gradient(to right, black 0%, black 15%, transparent 70%, transparent 100%);
+	}
+
+	.next-month-issue__text--info,
+	.also-in-issue {
+		width: 360px;
+	}
+
+	.next-month-issue .see-more {
+		margin-bottom: 0;
+	}
+
+	.next-month-issue__text--info .card-button-container {
+		display: none;
+	}
+
+	.also-in-issue .card-button-container {
+		display: inline-block;
+	}	
 
 	.shop-section .card {
 		height: 500px;
