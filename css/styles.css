@@ -230,7 +230,6 @@ a.menu {
 		WATCH SECTION
 ******************************/
 .video-container {
-	position: relative;
 	margin: 0 auto;
 }
 
@@ -272,6 +271,46 @@ a.menu {
 	letter-spacing: 1px;
 	line-height: 23px;
 	margin-bottom: 35px;
+}
+
+.originals-box__main {
+	padding: 35px 0 60px 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.originals-box__main h2 {
+	padding-left: 14px;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.originals {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.originals .row {
+	width: 100%;
+}
+
+.originals .overlay-img {
+	z-index: -1;
+}
+
+.originals img {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.arrow {
+	font-size: 40px;
 }
 
 /*****************************
@@ -825,6 +864,12 @@ footer {
 	position: relative;
 }
 
+.card::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 .overlay-img {
 	position: absolute;
 	top: 0;
@@ -958,10 +1003,6 @@ footer {
 
 .card-button-container:hover .card-button::before {
 	width: 100%;
-}
-
-.card-sm {
-
 }
 
 .card-img {
@@ -1108,6 +1149,45 @@ footer {
 		height: 115vw;
 	}
 
+	.originals-box__main {
+		width: 100%;
+	}
+
+	.originals-box__main h2 {
+		padding-left: 29px;
+		padding-right: 29px;
+	}
+
+	.originals-box__main h2 .see-more {
+		display: inline;
+		float: right;
+	}
+
+	.originals-box__main .see-more {
+		display: none;
+	}
+
+	.originals .card-md {
+		height: 24vw;
+	}
+
+	.originals .track-md-1-5:last-child {
+		display: none;
+	}
+
+	.arrow {
+		display: unset;
+		padding-top: 7vw;
+	}
+
+	.arrow:first-child {
+		padding-right: 10px;
+	}
+
+	.arrow:last-child {
+		padding-left: 10px;
+	}
+
 	.potd-container {
 		height: 65vw;
 	}
@@ -1185,6 +1265,10 @@ footer {
 		width: 100%;
 		height: 55vw;
 		max-height: 575px;
+	}
+
+	.originals .track-md-1-5:last-child {
+		display: unset;
 	}
 
 	.card-md {
@@ -1337,6 +1421,15 @@ footer {
 		height: 530px;
 		margin: 0 auto;
 		overflow: hidden;
+	}
+
+	.originals-box__main {
+		width: 107%;
+		margin-left: -3%;
+	}
+
+	.originals .card-md {
+		height: 260px;
 	}
 
 	.card-md {
